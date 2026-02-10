@@ -1,0 +1,240 @@
+/* --Gestion de couleur -- */
+:root {
+    --ctc-primary-blue: #192A56; /* Manga Maizina - Primary Color */
+    --ctc-accent-green: #A8E61C; /* Maitso Manjelatra - Accent Color (Ho an'ny Bokotra, Highlight) */
+    --ctc-light-gray: #F7F7F7; /* Background maivana */
+    --ctc-text-dark: #333333;
+    
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--ctc-text-dark);
+}
+
+/* --- NAVBAR --- */
+.custom-navbar {
+    background-color: var(--ctc-primary-blue) !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-brand .logo-text {
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.custom-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: var(--ctc-accent-green) !important;
+}
+
+/* Language Switcher */
+.lang-switcher .btn-lang {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 5px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.lang-switcher .btn-lang:hover {
+    color: white;
+    border-color: var(--ctc-accent-green);
+}
+
+.lang-switcher .btn-lang.active {
+    background-color: var(--ctc-accent-green);
+    color: var(--ctc-primary-blue);
+    border-color: var(--ctc-accent-green);
+    box-shadow: 0 0 10px rgba(168, 230, 28, 0.6);
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    min-height: 85vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: var(--ctc-primary-blue);
+    color: white;
+    position: relative; /* Tena ilaina ho an'ny positioning */
+    overflow: hidden; /* Hanapahana izay mivoaka */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Bouton Accent */
+.custom-btn-accent {
+    background-color: var(--ctc-accent-green);
+    color: var(--ctc-primary-blue) !important;
+    border: none;
+    font-weight: 700;
+    padding: 15px 35px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.custom-btn-accent:hover {
+    background-color: #8DCC00; /* Maitso somary maizina */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(168, 230, 28, 0.4);
+}
+
+/* NOUVEAU STYLE POUR LE LOGO ET SA FORME DE FOND */
+.logo-container {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Atao azo antoka fa tsy mivoaka ny endrika */
+}
+
+.logo-background-shape {
+    position: absolute;
+    width: 150%; /* Atao lehibe kokoa mba hahazoana rotate tsara */
+    height: 150%;
+    background: linear-gradient(45deg, var(--ctc-accent-green), #8DCC00); /* Gradient maitso */
+    border-radius: 50%; /* Atao boribory na ovako araka izay tiko */
+    /* Rotated to the right */
+    transform: rotate(25deg); /* Fihodinana kely miankavanana */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg); /* Ahitsy ny toerany sy ahodinana */
+    z-index: 1; /* Eo ambanin'ny sary */
+    box-shadow: 0 15px 30px rgba(168, 230, 28, 0.4);
+}
+
+.hero-logo-image {
+    position: relative;
+    max-width: 60%; /* Ataoko kely kokoa ny sary logo */
+    height: auto;
+    border-radius: 20px; /* Ataoko boribory kely ny sisiny */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 2; /* Eo ambonin'ny endrika loko */
+    /* Rotated to the left */
+    transform: rotate(-15deg); /* Fihodinana kely miankavia */
+}
+
+
+/* --- SECTIONS VUE GÉNÉRALE --- */
+.bg-primary-blue {
+    background-color: var(--ctc-primary-blue) !important;
+}
+.bg-light-gray {
+    background-color: var(--ctc-light-gray) !important;
+}
+.text-primary-blue {
+    color: var(--ctc-primary-blue) !important;
+}
+.text-accent {
+    color: var(--ctc-accent-green) !important;
+}
+
+/* Valeurs Cards */
+.value-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 300px; /* Hatao mitovy ny haavony */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.value-card h3 {
+    color: var(--ctc-accent-green);
+    font-weight: 700;
+}
+
+/* Formation List */
+.formation-list li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formation-list li:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formation-list li a {
+    color: var(--ctc-primary-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+}
+
+/* Contact Form */
+.inscription-ctc{
+    text-decoration: none;
+    color: white;
+    font-size: 48px;
+    transition: 0.5s;
+}
+.inscription-ctc:hover{
+    color: #A8E61C;
+    font-size: 50px;
+    cursor: grab;
+}
+
+.contact-form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.contact-form .form-control {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.contact-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Footer */
+footer a:hover {
+    color: var(--ctc-accent-green) !important;
+}
