@@ -1,0 +1,4 @@
+# Redirections pour Netlify
+/Test7/inscription.html  /Test7/inscription.html  200
+/Image/*  /images/:splat  301
+/Image  /images  301
