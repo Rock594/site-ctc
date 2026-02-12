@@ -1,0 +1,173 @@
+/* Fari-pitenenana (Variables) */
+:root {
+    --ctc-primary-blue: #192A56; /* Manga Maizina - Primary Color */
+    --ctc-accent-green: #A8E61C; /* Maitso Manjelatra - Accent Color (Ho an'ny Bokotra, Highlight) */
+    --ctc-light-gray: #F7F7F7; /* Background maivana */
+    --ctc-text-dark: #333333;
+    
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--ctc-text-dark);
+}
+
+/* --- NAVBAR --- */
+.custom-navbar {
+    background-color: var(--ctc-primary-blue) !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-brand .logo-text {
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.custom-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: var(--ctc-accent-green) !important;
+}
+
+/* Language Switcher */
+.lang-switcher .btn-lang {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 5px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.lang-switcher .btn-lang:hover {
+    color: white;
+    border-color: var(--ctc-accent-green);
+}
+
+.lang-switcher .btn-lang.active {
+    background-color: var(--ctc-accent-green);
+    color: var(--ctc-primary-blue);
+    border-color: var(--ctc-accent-green);
+    box-shadow: 0 0 10px rgba(168, 230, 28, 0.6);
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    min-height: 85vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: var(--ctc-primary-blue);
+    color: white;
+    position: relative; /* Tena ilaina ho an'ny positioning */
+    overflow: hidden; /* Hanapahana izay mivoaka */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Bouton Accent */
+.custom-btn-accent {
+    background-color: var(--ctc-accent-green);
+    color: var(--ctc-primary-blue) !important;
+    border: none;
+    font-weight: 700;
+    padding: 15px 35px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.custom-btn-accent:hover {
+    background-color: #8DCC00; /* Maitso somary maizina */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(168, 230, 28, 0.4);
+}
+
+
+
+/* ... (Ny CSS teo aloha rehetra) ... */
+
+/* ------------------------------------------- */
+/* FANAMPIN-KAIZANA HO AN'NY DYNAMISME VAOVAO */
+/* ------------------------------------------- */
+
+.bg-primary-blue { background-color: var(--primary-blue) !important; }
+.text-accent { color: var(--ctc-accent-green) !important; }
+.custom-btn-accent { 
+    background-color: var(--ctc-accent-green);
+    color: white;
+    border: 1px solid var(--ctc-accent-green);
+    transition: background-color 0.3s, transform 0.3s;
+}
+.custom-btn-accent:hover {
+    background-color: #008f4c; /* Manga Maitso maizina kely */
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Fizarana Formations (Lisitra) */
+.formation-list li a {
+    color: var(--primary-blue);
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: block;
+    padding: 15px 10px;
+    border-left: 5px solid transparent;
+    transition: all 0.2s;
+}
+.formation-list li a:hover {
+    background-color: rgba(0, 77, 153, 0.05); /* Manga maivana */
+    border-left: 5px solid var(--ctc-accent-green);
+    color: var(--ctc-accent-green);
+}
+.formation-list li a.active-course {
+    background-color: var(--light-gray);
+    border-left: 5px solid var(--ctc-accent-green);
+    color: var(--ctc-accent-green);
+    font-weight: 700;
+}
+
+/* Formulaire Inscription sy Contact */
+.dynamic-form label {
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+.inscription-form-card {
+    border-radius: 15px;
+    background-color: white;
+}
+#selected-course {
+    /* Mialà amin'ny fampiasana background rehefa 'readonly' */
+    background-color: #e9ecef !important; 
+    color: var(--ctc-accent-green);
+    font-weight: 700;
+}
+
+/* Fampifanarahana amin'ny finday */
+@media (max-width: 992px) {
+    .formation-list li a {
+        font-size: 1rem;
+        padding: 10px 5px;
+    }
+}

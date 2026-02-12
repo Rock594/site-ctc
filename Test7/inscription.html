@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTC Madagascar - Formation en Informatique & Internet</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+      <header class="navbar navbar-expand-lg sticky-top custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#accueil">
+                <span class="logo-text">CTC MADAGASCAR</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#vision" data-key="nav_vision">Vision & Mission</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#valeurs" data-key="nav_valeurs">Valeurs</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#formation" data-key="nav_formations">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#projets" data-key="nav_projets">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-scroll" href="#contact" data-key="nav_contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="lang-switcher ms-3">
+                <button class="btn btn-sm btn-lang active" data-lang="fr">FR</button>
+                <button class="btn btn-sm btn-lang" data-lang="mg">MG</button>
+                <button class="btn btn-sm btn-lang" data-lang="en">EN</button>
+            </div>
+            
+        </div>
+    </header>
+    
+
+
+    <section id="formation" class="py-5 bg-light-gray animated-section">
+        <div class="container">
+            <h2 class="display-4 text-primary-blue mb-5 text-center animate-on-scroll" data-animation="fadeInUp" data-key="formation_main_title">Inscrivez-vous à nos Formations</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="display-5 text-primary-blue animate-on-scroll" data-animation="fadeInLeft">
+                        <span style="font-weight: bold;" data-key="formation_subtitle_part1">Domaines </span><span class="text-accent" data-key="formation_subtitle_part2">clés</span>
+                    </h3>
+                    <p class="lead" data-key="formation_intro">Sélectionnez le cours qui vous intéresse pour une inscription rapide:</p>
+                    
+                    <ul class="list-unstyled formation-list" id="formation-select-list">
+                        <li class="animate-on-scroll" data-animation="fadeInRight" data-delay="0.1s">
+                            <a href="#" class="text-decoration-none course-item" data-course="Informatique de base" data-key="f_office">Informatique de base</a>
+                        </li>
+                        <li class="animate-on-scroll" data-animation="fadeInRight" data-delay="0.1s">
+                            <a href="#" class="text-decoration-none course-item" data-course="Informatique avancée" data-key="f_office1">Informatique avancée</a>
+                        </li>
+                        <li class="animate-on-scroll" data-animation="fadeInRight" data-delay="0.2s">
+                            <a href="#" class="text-decoration-none course-item" data-course="Internet" data-key="f_internet">Internet</a>
+                        </li>
+                        <li class="animate-on-scroll" data-animation="fadeInRight" data-delay="0.3s">
+                            <a href="#" class="text-decoration-none course-item" data-course="Excel avancé" data-key="f_excel">Excel avancé</a>
+                        </li>
+                        <li class="animate-on-scroll" data-animation="fadeInRight" data-delay="0.4s">
+                            <a href="#" class="text-decoration-none course-item" data-course="Programmation Access" data-key="f_access">Programmation Access</a>
+                        </li>
+                        <li class="animate-on-scroll" data-animation="fadeInRight" data-delay="0.5s">
+                            <a href="#" class="text-decoration-none course-item" data-course="Maintenance informatique" data-key="f_maintenance">Maintenance informatique</a>
+                        </li>
+                        <li class="animate-on-scroll" data-animation="fadeInRight" data-delay="0.6s">
+                            <a href="#" class="text-decoration-none course-item" data-course="Réseau informatique" data-key="f_reseau">Réseau informatique</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 animate-on-scroll" data-animation="zoomIn" data-delay="0.5s">
+                    <div class="card p-4 shadow-lg h-100 inscription-form-card">
+                        <h4 class="text-primary-blue mb-4 text-center" data-key="form_formation_title">Formulaire d'Inscription Rapide</h4>
+                        <form id="inscription-form" class="dynamic-form">
+                            <div class="mb-3">
+                                <label for="form-name" class="form-label" data-key="form_name_label">Votre Nom Complet</label>
+                                <input type="text" id="form-name" name="user_name" class="form-control" required placeholder="Ex: Rakoto Jean">
+                            </div>
+                            <div class="mb-3">
+                                <label for="form-email" class="form-label" data-key="form_email_label">Votre Email</label>
+                                <input type="email" id="form-email" name="user_email" class="form-control" required placeholder="Ex: rakoto@mail.com">
+                            </div>
+                            <div class="mb-4">
+                                <label for="selected-course" class="form-label" data-key="form_course_label">Formation Choisie</label>
+                                <input type="text" id="selected-course" name="course_selected" class="form-control" readonly required placeholder="Cliquez sur une formation à gauche pour la sélectionner.">
+                            </div>
+                            
+                            <div id="form-formation-message" class="mb-3 text-center" style="font-weight: bold;"></div>
+
+                            <button type="submit" class="btn custom-btn-accent w-100" data-key="form_inscription_button">
+                                <i class="fas fa-paper-plane me-2"></i> Envoyer ma demande d'inscription
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <a href="http://127.0.0.1:5500/index.html" class="btn btn-outline-primary btn-sm mt-3">RETOURNER A LA PAGE D'ACCUEIL</a>
+
+    </section>
+
+    <section id="projets" class="py-5 bg-white animated-section">
+        </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        </footer>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // ⚠️ PUBLIC KEY EMAILJS!
+        (function() {
+            emailjs.init("b74JClZQJB4kqkfsU"); 
+        })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script> 
+
+</body>
+</html>
