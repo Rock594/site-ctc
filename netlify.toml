@@ -1,0 +1,23 @@
+[build]
+  publish = "."
+
+# Redirections pour corriger les anciens chemins
+[[redirects]]
+  from = "/images/Image/*"
+  to = "/images/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/Image/*"
+  to = "/images/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/Test7/inscription.html"
+  to = "/Test7/inscription.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200

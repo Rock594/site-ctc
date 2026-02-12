@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^images/Image/(.*)$ /images/$1 [R=301,L]
+RewriteRule ^Image/(.*)$ /images/$1 [R=301,L]
